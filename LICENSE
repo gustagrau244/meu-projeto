@@ -13,9 +13,28 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+a estilização do <span>. A tag <span> é utilizada para agrupar elementos que serão estili-
+zados e no nosso projeto faz referência ao menu hambúrguer. Lembre-se, o menu hamburguer é definido
+
+como o ícone com três barras horizontais e que, ao clicar nele, abre um menu com opções. Definiremos a
+largura e altura do menu em 24 pixels. A imagem de fundo será a que se encontra no arquivo “Menu.svg”.
+Por fim, definiremos um display do tipo inline-block.
+
+Precisamos conectar o arquivo CSS ao arquivo HTML. Poderíamos fazer isso por meio da tag <link>, mas
+
+dessa vez vamos fazer um pouco diferente. Vamos criar essa conexão utilizando a regra @import na pri-
+meira linha dentro no nosso arquivo “styles.css”.
+
+@import url(“styles/header.css”);
+.cabeçalho__menu-hamburguer {
+width: 24px;
+height: 24px;
+background-image: url(“../img/Menu.svg”);
+display: inline-block;
