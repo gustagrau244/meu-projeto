@@ -38,3 +38,14 @@ width: 24px;
 height: 24px;
 background-image: url(“../img/Menu.svg”);
 display: inline-block;
+<header class=”cabeçalho”>
+<div class=”container”>
+<span class=”cabeçalho__menu-hamburguer”></span>
+<img src=”img/Logo.svg” alt=”Logo da Alurabooks”>
+
+</div>width: 24px;
+height: 24px;
+background-image: url(“../img/Menu.svg”);
+background-repeat: no-repeat;
+background-position: center;
+display: inline-block;
